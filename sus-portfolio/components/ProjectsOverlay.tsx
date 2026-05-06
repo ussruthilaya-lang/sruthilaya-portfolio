@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from 'react'
 
-export type { Project } from '@/content/projects'
+import type { Project } from '@/content/projects'
 import { PROJECTS } from '@/content/projects'
+export type { Project } from '@/content/projects'
 export { PROJECTS }
 export const FEATURED = PROJECTS.slice(0, 3)
 

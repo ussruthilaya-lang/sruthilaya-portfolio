@@ -3,11 +3,12 @@
 import { useEffect, useState } from 'react'
 import { useBodyScrollLock } from '@/lib/useBodyScrollLock'
 
-export type { ThoughtTag, Thought } from '@/content/thoughts'
+import type { ThoughtTag } from '@/content/thoughts'
 import { THOUGHTS, TAG_COLORS } from '@/content/thoughts'
+export type { ThoughtTag, Thought } from '@/content/thoughts'
 export { THOUGHTS }
 
-const ALL_TAGS = Object.keys(TAG_COLORS) as import('@/content/thoughts').ThoughtTag[]
+const ALL_TAGS = Object.keys(TAG_COLORS) as ThoughtTag[]
 
 interface Props {
   open: boolean

@@ -3,8 +3,9 @@
 import { useEffect, useState } from 'react'
 import { useBodyScrollLock } from '@/lib/useBodyScrollLock'
 
-export type { Platform, ActivityTag, Activity } from '@/content/activity'
+import type { ActivityTag } from '@/content/activity'
 import { ACTIVITIES, PLATFORM_ICONS, PLATFORM_COLORS } from '@/content/activity'
+export type { Platform, ActivityTag, Activity } from '@/content/activity'
 export { ACTIVITIES, PLATFORM_ICONS, PLATFORM_COLORS }
 
 const ALL_TAGS: ActivityTag[] = ['LLM', 'RAG', 'Agents', 'NLP', 'Career', 'Research', 'Building']
